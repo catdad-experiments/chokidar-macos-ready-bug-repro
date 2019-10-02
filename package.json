@@ -1,0 +1,24 @@
+{
+  "name": "chokidar-macos-ready-bug-repro",
+  "version": "1.0.0",
+  "description": "chokidar-macos-ready-bug-repro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node parent.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catdad-experiments/chokidar-macos-ready-bug-repro.git"
+  },
+  "author": "Kiril Vatev <vatev.1@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catdad-experiments/chokidar-macos-ready-bug-repro/issues"
+  },
+  "homepage": "https://github.com/catdad-experiments/chokidar-macos-ready-bug-repro#readme",
+  "dependencies": {
+    "chokidar": "^3.2.1",
+    "electron": "^4.2.11"
+  }
+}
