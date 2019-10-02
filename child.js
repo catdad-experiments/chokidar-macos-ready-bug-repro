@@ -1,7 +1,10 @@
+let count = 0;
+setInterval(() => {
+  console.log('child', ++count, Date.now());
+}, 100);
+
 const path = require('path');
-
 const chokidar = require('chokidar');
-
 const root = path.resolve('.');
 
 const watcher = chokidar.watch('.', {
@@ -15,11 +18,6 @@ const watcher = chokidar.watch('.', {
 
 watcher.on('add', f => console.log('add', f));
 watcher.on('ready', () => console.log('ready'));
-
-let count = 0;
-setInterval(() => {
-  console.log('child', ++count, Date.now());
-}, 100);
 
 // exit after 10 seconds... it should definitely be enough time
 setTimeout(() => {
