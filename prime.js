@@ -18,4 +18,6 @@ function display(n) {
   console.log(arr.pop());
 }
 
+console.log('starting to calculate prime...');
+
 display(200000);
