@@ -1,4 +1,7 @@
+const os = require('os');
 const { spawn } = require('child_process');
+
+console.log(`${process.platform}, ${os.cpus()[0].model.trim()}, ${os.cpus()[0].speed}, ${os.cpus().length} cores`);
 
 [
   spawn('node', ['child.js'], { stdio: ['ignore', 'pipe', 'pipe' ]}),
